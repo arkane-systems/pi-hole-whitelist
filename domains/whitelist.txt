@@ -13,6 +13,7 @@ H	d2gatte9o95jao.cloudfront.net		Domain owned by Amazon. Used to deliver media s
 
 # Amazon AWS
 H	amazonaws.com				Amazon Web Services (AWS). This domain is used to serve files and other static resources.
+H	s3.amazonaws.com			Used to deliver files that are stored in Amazon AWS S3 storage buckets.
 
 # Apple
 H	appleid.apple.com			Used to sign in to your Apple account.
@@ -54,6 +55,9 @@ H	i1.ytimg.com				Used to deliver thumbails in YouTube.
 H	instantmessaging-pa.googleapis.com	APIs for various Google services.
 H	manifest.googlevideo.com		Used for YouTube live streams.
 H	redirector.googlevideo.com		Used by YouTube to play embedded videos on third-party websites.
+H	s.youtube.com				Used to record YouTube watch history.
+H	s.ytimg.com				Used to deliver thumbails in YouTube.
+H	s2.youtube.com				Used to record YouTube watch history.
 
 # Gravatar
 H	gravatar.com				Owned by Automattic. Gravatar is a service for providing globally unique avatars.
@@ -100,6 +104,8 @@ H	outlook.office365.com			Used for Outlook email.
 H	pricelist.skype.com			Used to make group calls, group chats, etc. on Skype.
 H	products.office.com			Used by Microsoft Office apps.
 H	s.gateway.messenger.live.com		Personal information manager web app from Microsoft.
+H	t0.ssl.ak.dynamic.tiles.virtualearth.net	Bing Maps.
+H	t0.ssl.ak.tiles.virtualearth.net	Bing Maps.
 
 # Plex
 H	cpms.spop10.ams.plex.bz			Plex media player.
@@ -120,6 +126,23 @@ H	pubsub.plex.bz				Plex media player.
 H	pubsub.plex.tv				Plex media player.
 H	staging.plex.tv				Plex media player.
 H	status.plex.tv				Plex media player.
+H	themoviedb.com				Metadata for movies.
+H	thetvdb.com				Metadata for TV series.
+H	tvdb2.plex.tv				Plex media player.
+H	tvthemes.plexapp.com			Plex media player.
+
+# Spotify
+H	spclient.wg.spotify.com			Spotify.
+
+# Symantec
+H	sa.symcb.com				These are Symantec Certificate Revocation List servers.
+
+# Twitter
+H	t.co					Used as a URL shortener while sharing Twitter posts.
+H	twimg.com				Used to deliver media on Twitter.
+
+# WordPress
+H	s1.wp.com				Used to feliver static files and media for wordpress.com.
 
 # Xbox Live
 H	attestation.xboxlive.com		Xbox Live.
@@ -130,6 +153,8 @@ H	eds.xboxlive.com			Xbox Live.
 H	help.ui.xboxlive.com			Xbox Live.
 H	licensing.xboxlive.com			Xbox Live.
 H	notify.xboxlive.com			Xbox Live.
+H	title.auth.xboxlive.com			Xbox Live.
+H	title.mgt.xboxlive.com			Xbox Live.
 
 # --------------------------------------------------------
 
@@ -191,11 +216,6 @@ assets.adobedtm.com
 # Microsoft
 i.s-microsoft.com
 
-# Microsoft (Bing Maps)
-ecn.dev.virtualearth.net
-t0.ssl.ak.dynamic.tiles.virtualearth.net
-t0.ssl.ak.tiles.virtualearth.net
-
 # Microsoft (Connectivity Checks)
 ipv6.msftncsi.com
 www.msftncsi.com
@@ -208,13 +228,6 @@ msedge.api.cdp.microsoft.com
 client-s.gateway.messenger.live.com
 m.hotmail.com
 s{1..5}.symcb.com
-s1.symcb.com
-s2.symcb.com
-s3.symcb.com
-s4.symcb.com
-s5.symcb.com
-sa.symcb.com
-pricelist.skype.com
 ui.skype.com
 
 # Microsoft (Windows Update)
@@ -236,24 +249,17 @@ app.plex.tv
 chtbl.com
 metrics.plex.tv
 plex.tv
-themoviedb.com
-thetvdb.com
-tvdb2.plex.tv
-tvthemes.plexapp.com
 tvthemes.plexapp.com.cdn.cloudflare.net
 www.plex.tv
 
 # Spotify
 apresolve.spotify.com
-spclient.wg.spotify.com
 
 # Xbox Live
 activity.windows.com
 arc.msn.com
 client-s.gateway.messenger.live.com
 settings-win.data.microsoft.com
-title.auth.xboxlive.com
-title.mgt.xboxlive.com
 v10.events.data.microsoft.com
 v10.vortex-win.data.microsoft.com
 v20.events.data.microsoft.com
@@ -266,7 +272,6 @@ xsts.auth.xboxlive.com
 
 # YouTube
 oauthaccountmanager.googleapis.com
-s.youtube.com 
 video-stats.l.google.com
 www.googleapis.com 
 youtubei.googleapis.com
@@ -286,32 +291,11 @@ pihole -w api.twitter.com
 pihole -w mobile.twitter.com
 pihole --white-regex (\.|^)twimg\.com$
 
-(0, 's.youtube.com', 1, 'Used to record YouTube watch history. Blocking this domain will pause your watch history on YouTube. - qjz9zk')
-(0, 's.ytimg.com', 1, 'Owned by Google. Used to deliver thumbails in YouTube. - qjz9zk')
-(0, 's1.wp.com', 1, 'Owned by WordPress. Used to feliver static files and media for websites which are hosted on wordpress.com platform. - qjz9zk')
-(0, 's2.youtube.com', 1, 'Used to record YouTube watch history. Blocking this domain will pause your watch history on YouTube. - qjz9zk')
-(0, 's3.amazonaws.com', 1, 'Used to deliver files that are stored in Amazon AWS S3 storage buckets. - qjz9zk')
-(0, 'sa.symcb.com', 1, 'Owned by Symantec. These are Symantec Certificate Revocation List servers and are used by a number of companies including Microsoft. - qjz9zk')
-(0, 'spclient.wg.spotify.com', 1, 'Spotify on Web and desktop player does not work if this domain is blocked. - qjz9zk')
-(0, 't.co', 1, 'Owned by Twitter. Used as a URL shortner while sharing Twitter posts. - qjz9zk')
-(0, 't0.ssl.ak.dynamic.tiles.virtualearth.net', 1, 'Owned by Microsoft. Used by Bing Maps to get information about various places. For example, this domain should be whitelisted in order to select a store location on costco.com. - qjz9zk')
-(0, 't0.ssl.ak.tiles.virtualearth.net', 1, 'Owned by Microsoft. Used by Bing Maps to get information about various places. For example, this domain should be whitelisted in order to select a store location on costco.com. - qjz9zk')
-(0, 'themoviedb.com', 1, 'Metadata for movies - qjz9zk')
-(0, 'thetvdb.com', 1, 'Metadata for TV series - qjz9zk')
-(0, 'tinyurl.com', 1, 'Popular URL shortner - qjz9zk')
-(0, 'title.auth.xboxlive.com', 1, 'Owned by Microsoft. Used for Xbox updates, game downloads, acheivements unlocking etc. - qjz9zk')
-(0, 'title.mgt.xboxlive.com', 1, 'Owned by Microsoft. Used for Xbox updates, game downloads, acheivements unlocking etc. - qjz9zk')
-(0, 'traffic.libsyn.com', 1, 'Used in Pocketcasts app to serve and download podcasts. - qjz9zk')
-(0, 'tvdb2.plex.tv', 1, 'Plex is a client–server media player system plus an ancillary software suite. - qjz9zk')
-(0, 'tvthemes.plexapp.com', 1, 'Plex is a client–server media player system plus an ancillary software suite. - qjz9zk')
-(0, 'twimg.com', 1, 'Owned by Twitter. Used to deliver media on Twitter. - qjz9zk')
 (0, 'ui.skype.com', 1, 'Used to make group calls, group chats etc. on Skype. - qjz9zk')
 (0, 'video-stats.l.google.com', 1, 'Used to record YouTube watch history. Blocking this domain will pause your watch history on YouTube. - qjz9zk')
-(0, 'videos.vidible.tv', 1, 'Video delivery systems, popular in entertainment and news sites. - qjz9zk')
 (0, 'widget-cdn.rpxnow.com', 1, 'Owned by Akamai Technologies. Used as a sign in method in various apps and sites. - qjz9zk')
 (0, 'win10.ipv6.microsoft.com', 1, 'It gives full IPv6 connectivity for IPv6-capable hosts that are on the IPv4 Internet but have no native connection to an IPv6 network.  - qjz9zk')
 (0, 'wp.com', 1, 'Owned by WordPress.com hosting. - qjz9zk')
-(0, 'ws.audioscrobbler.com', 1, 'Owned by last.fm. Used to get track metadata using last.fm API. - qjz9zk')
 (0, 'www.googleapis.com', 1, 'An important domain used to provide APIs to various Google services.  - qjz9zk')
 (0, 'www.msftncsi.com', 1, 'Owned by Microsoft. This domain is checked by the operating systems when connecting via wifi, and if they do not get the response they expect, they may try to open a wifi login page or similar as they believe they are located behind a captive portal. - qjz9zk')
 (0, 'www.youtube-nocookie.com', 1, 'Owned by Google. YouTube launched a new feature on the site recently that it called Privacy-Enhanced Mode. This domain is used to embed the videos on third-party sites with less trackers. - qjz9zk')
